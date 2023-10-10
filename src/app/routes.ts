@@ -1,9 +1,12 @@
 import { Routes } from "@angular/router";
 import { CityComponent } from "./city/city.component";
 import { ValueComponent } from "./value/value.component";
+import { CityDeteailComponent } from "./city/city-deteail/city-deteail.component";
 
-export const appRoutes : Routes = [
+export const appRoutes: Routes = [
     { path: "city", component: CityComponent },
     { path: "value", component: ValueComponent },
+    { path: "cityDetail/:cityId", component: CityDeteailComponent },
     { path: "**", redirectTo: "city", pathMatch: "full" }
+    
 ]

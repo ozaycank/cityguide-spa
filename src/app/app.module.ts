@@ -8,13 +8,14 @@ import { NavComponent } from './nav/nav.component';
 import { CityComponent } from './city/city.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
-
+import { CityDeteailComponent } from './city/city-deteail/city-deteail.component';
 @NgModule({
   declarations: [			
     AppComponent,
       ValueComponent,
       NavComponent,
-      CityComponent
+      CityComponent,
+      CityDeteailComponent
    ],
   imports: [
     BrowserModule,
