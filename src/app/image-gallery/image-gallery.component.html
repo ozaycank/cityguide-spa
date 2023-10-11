@@ -1,0 +1,11 @@
+<div class="gallery">
+    <div *ngFor="let imageUrl of images" (click)="openModal(imageUrl)">
+      <img [src]="imageUrl" alt="Image" />
+    </div>
+  </div>
+  <app-custom-modal
+    *ngIf="modalIsOpen"
+    [imageUrl]="modalImageUrl"
+    (closeModalEvent)="closeModal()"
+  ></app-custom-modal>
+  
