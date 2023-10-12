@@ -11,6 +11,8 @@ import { appRoutes } from './routes';
 import { CityDeteailComponent } from './city/city-deteail/city-deteail.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { CustomModalComponent } from './custom-modal/custom-modal.component';
+import { CityAddComponent } from './city/city-add/city-add.component';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,16 @@ import { CustomModalComponent } from './custom-modal/custom-modal.component';
     CityDeteailComponent,
     ImageGalleryComponent,
     CustomModalComponent,
+    CityAddComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
