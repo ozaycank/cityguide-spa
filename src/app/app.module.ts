@@ -13,6 +13,7 @@ import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { CustomModalComponent } from './custom-modal/custom-modal.component';
 import { CityAddComponent } from './city/city-add/city-add.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import {AlertifyServiceService} from './services/alertify-service.service'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AlertifyServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

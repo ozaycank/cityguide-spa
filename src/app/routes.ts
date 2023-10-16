@@ -8,7 +8,7 @@ export const appRoutes: Routes = [
     { path: "city", component: CityComponent },
     { path: "value", component: ValueComponent },
     { path: "cityDetail/:cityId", component: CityDeteailComponent },
-    {path:"cityadd", component:CityAddComponent},
+    { path: "cityadd", component: CityAddComponent },
     { path: "**", redirectTo: "city", pathMatch: "full" }
-    
+
 ]
