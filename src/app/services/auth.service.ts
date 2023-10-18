@@ -51,7 +51,9 @@ export class AuthService {
   }
 
   logOut() {
-    localStorage.removeItem(this.TOKEN_KEY)
+    localStorage.removeItem(this.TOKEN_KEY);
+    this.alertifyService.error("Log out to the system");
+
   }
 
   loggedIn() {

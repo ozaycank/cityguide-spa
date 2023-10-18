@@ -34,6 +34,14 @@
         <input class="form-control me-sm-2" type="search" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
+      <form *ngIf="!isAuthenticated" #loginForm="ngForm" (ngSubmit)="login()" class="d-flex">
+        <input class="form-control me-sm-2" name="userName" [(ngModel)]="loginUser.userName"
+          required="Username is required" type="text" placeholder="User Name">
+        <input class="form-control me-sm-2" name="password" [(ngModel)]="loginUser.password"
+          required="Username is required" type="text" placeholder="Password">
+        <button class="btn btn-secondary my-2 my-sm-0" [disabled]="!loginForm.valid" type="submit">Login</button>
+      </form>
+      <button class="btn btn-secondary my-2 my-sm-0" *ngIf="isAuthenticated" (click)="logout()" type="submit">Log Out</button>
     </div>
   </div>
 </nav>
