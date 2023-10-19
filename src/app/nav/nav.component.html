@@ -40,6 +40,9 @@
         <input class="form-control me-sm-2" name="password" [(ngModel)]="loginUser.password"
           required="Username is required" type="text" placeholder="Password">
         <button class="btn btn-secondary my-2 my-sm-0" [disabled]="!loginForm.valid" type="submit">Login</button>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a>
+        </li>
       </form>
       <button class="btn btn-secondary my-2 my-sm-0" *ngIf="isAuthenticated" (click)="logout()" type="submit">Log Out</button>
     </div>

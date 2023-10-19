@@ -14,9 +14,10 @@ import { CustomModalComponent } from './custom-modal/custom-modal.component';
 import { CityAddComponent } from './city/city-add/city-add.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import {AlertifyServiceService} from './services/alertify-service.service'
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     ValueComponent,
     NavComponent,
@@ -25,8 +26,8 @@ import {AlertifyServiceService} from './services/alertify-service.service'
     ImageGalleryComponent,
     CustomModalComponent,
     CityAddComponent,
-    
-  ],
+      RegisterComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
