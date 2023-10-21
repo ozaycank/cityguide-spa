@@ -16,6 +16,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AlertifyServiceService } from './services/alertify-service.service'
 import { RegisterComponent } from './register/register.component';
 import { NgxEditorModule } from 'ngx-editor';
+import { PhotoComponent } from './photo/photo.component';
+import {FileUploadModule} from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { NgxEditorModule } from 'ngx-editor';
     ImageGalleryComponent,
     CustomModalComponent,
     CityAddComponent,
-    RegisterComponent
+    RegisterComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { NgxEditorModule } from 'ngx-editor';
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
     FormsModule,
-    NgxEditorModule
+    NgxEditorModule,
+    FileUploadModule
   ],
   providers: [AlertifyServiceService],
   bootstrap: [AppComponent],
